@@ -1,0 +1,5 @@
+[ZEPHYR_CONFIG]
+ZEPHYR_HOST=https://dish.yourzephyr.com
+ZEPHYR_REMOTE_PATH=/flex/services/rest/latest
+USERNAME=<ZEPHYR_USERNAME>
+PASSWORD=<ZEPHYR_PASSWORD>
