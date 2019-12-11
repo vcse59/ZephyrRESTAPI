@@ -19,7 +19,7 @@ import threading
 
 CONTENT_TYPE                    = "application/json"
 
-USE_ZEPHYR_PROXY                = 0
+USE_ZEPHYR_PROXY                = 1
 ZEPHYR_PROXY_IP_ADDRESS         = "127.0.0.1"
 ZEPHYR_PROXY_PORT_NUMBER        = 9999
 
@@ -3278,8 +3278,8 @@ def test_createCycleAndPhase_process():
     add_zephyr_log_handler("./")
 
     #Input variables
-    releaseName = "Automation_Testing_Release"
-    ProjectName = "NCI Android"
+    releaseName = "Automation_Tools_Longevity"
+    ProjectName = "NCI Longevity"
     AutomationTemplateCycleName = "Sample_Automation_Test_Cycle"
     AutomationTemplatePhaseName = "Sample_Automation_Phase_Test_Template"
     environment                 = "Production"
@@ -3306,9 +3306,9 @@ def test_createCycleAndPhase_process():
     testCaseTreeIdList = []
 
 
-    #suiteType = "NON_NCI"
+    suiteType = "NON_NCI"
     #suiteType = "CLIENT_INTEGRATION_SMOKE"
-    suiteType = "SYSTEM_SMOKE"
+    #suiteType = "SYSTEM_SMOKE"
 
     if (suiteType in ZEPHYR_TEST_REPO_PATH.keys()):
         AutomationSmokefolderHierarchiy = ZEPHYR_TEST_REPO_PATH[suiteType]
